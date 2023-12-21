@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance Register</title>
+    <link rel="stylesheet" href="/static/style.css" />>
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Attendance Register</h1>
+    </header>
+    
+    <main>
+        <section>
+            <h2>Attendance Check</h2>
+            {if is_late}
+                <p>Sorry, you are late. Access denied!</p>
+		<p>Your salary will be deducted for being late.</p>
+            {else}
+                <p>Welcome! You are on time. Access granted!</p>
+		<p>No salary deduction for being on time.</p>
+            {endif}
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Attendance Register</p>
+    </footer>
+</body>
+</html>
