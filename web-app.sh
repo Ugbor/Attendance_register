@@ -7,6 +7,7 @@ echo "From python" >> tempdir/Dockerfile
 echo "RUN pip install flask" >> tempdir/Dockerfile
 echo "COPY ./static /home/myapp/static/" >> tempdir/Dockerfile
 echo "COPY ./templates /home/myapp/templates/" >>tempdir/Dockerfile
+echo "COPY attendance_app.py /home/myapp/" >> tempdir/Dockerfile
 echo "EXPOSE 5000 >> tempdir/Dockerfile"
 echo "CMD python /home/myapp/attendance_register.py" >>tempdir/Dockerfile
 cd tempdir
