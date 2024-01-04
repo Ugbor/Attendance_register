@@ -18,8 +18,8 @@ echo "CMD python /home/myapp/attendance_app.py" >>tempdir/Dockerfile
 
 cd tempdir
 
-docker build -t attendance_register .
+docker build -t attendanceregister .
 
-docker run -t -d -p 5000:5000 --name samplerunning attendance_app
+docker run -t -d -p 5000:5000 --name samplerunning attendanceregister
 docker ps -a
 
