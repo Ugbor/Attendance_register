@@ -10,11 +10,11 @@ echo "COPY ./static /home/myapp/static/" >> tempdir/Dockerfile
 echo "COPY ./templates /home/myapp/templates/" >>tempdir/Dockerfile
 echo "COPY attendance_app.py /home/myapp/" >> tempdir/Dockerfile
 echo "EXPOSE 5000" >> tempdir/Dockerfile
-echo "CMD python /home/myapp/attendance_register.py" >>tempdir/Dockerfile
+echo "CMD python /home/myapp/attendance_app.py" >>tempdir/Dockerfile
 
 cd tempdir
 
-docker build -t attendanceregister .
-docker run -t -d -p 5000:5000 --name attendance_run attendance_register
-docker ps -a
+sudo docker build -t attendanceregister .
+sudo docker run -t -d -p 5000:5000 --name samplerunning attendanceregister
+sudo docker ps -a
 

@@ -2,3 +2,7 @@ CONTAINER ID   IMAGE                 COMMAND                  CREATED          S
 88c8fd3b2f0d   attendance_register   "/bin/sh -c 'python …"   12 minutes ago   Exited (2) 12 minutes ago             samplerunning
 CONTAINER ID   IMAGE                 COMMAND                  CREATED         STATUS                     PORTS     NAMES
 916c1a5e85d4   attendance_register   "/bin/sh -c 'python …"   3 minutes ago   Exited (2) 3 minutes ago             attendance
+CONTAINER ID   IMAGE                 COMMAND                  CREATED         STATUS                   PORTS                                                  NAMES
+d35e86165f8d   attendanceregister    "/bin/sh -c 'python …"   5 minutes ago   Up 5 minutes             0.0.0.0:5000->5000/tcp, :::5000->5000/tcp              samplerunning
+89ebf2fb9383   jenkins/jenkins:lts   "/usr/bin/tini -- /u…"   4 hours ago     Up 4 hours               0.0.0.0:8080->8080/tcp, :::8080->8080/tcp, 50000/tcp   jenkins_server
+5d56f4b6c97d   attendance_register   "/bin/sh -c 'python …"   10 days ago     Exited (2) 10 days ago                                                          attendance_run
