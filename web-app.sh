@@ -1,9 +1,5 @@
 #!/bin/bash
 
-mkdir tempdir
-mkdir tempdir/templates
-mkdir tempdir/static
-
 cp attendance_app.py tempdir/.
 cp -r templates/* tempdir/templates/.
 cp -r static/* tempdir/static/.
@@ -18,8 +14,8 @@ echo "CMD python /home/myapp/attendance_app.py" >>tempdir/Dockerfile
 
 cd tempdir
 
-docker build -t attendanceregister .
+sudo docker build -t attendanceregister .
 
-docker run -t -d -p 5000:5000 --name samplerunning attendanceregister
-docker ps -a
+sudo docker run -t -d -p 5000:5000 --name samplerunning attendanceregister
+sudo docker ps -a
 
