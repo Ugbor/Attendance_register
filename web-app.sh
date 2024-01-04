@@ -14,8 +14,8 @@ echo "CMD python /home/myapp/attendance_app.py" >>tempdir/Dockerfile
 
 cd tempdir
 
-sudo docker build -t attendanceregister .
+docker build -t attendanceregister .
 
-sudo docker run -t -d -p 5000:5000 --name samplerunning attendanceregister
-sudo docker ps -a
+docker run -t -d -p 5000:5000 --name samplerunning attendanceregister
+docker ps -a
 
